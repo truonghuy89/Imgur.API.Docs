@@ -1,25 +1,13 @@
-.. Imgur.API documentation master file, created by
-   sphinx-quickstart on Sat Jan 30 12:57:12 2016.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
-Welcome to Imgur.API's documentation!
+Imgur.API
 =====================================
 
-Contents:
+Imgur.API is a .NET implementation of Imgur’s v3 API.
 
-.. toctree::
-   :maxdepth: 2
+It supports Imgur’s free and Mashape’s commercial API endpoints.
+
+GitHub_ | Build_ | NuGet_
+
+.. GitHub_: https://github.com/DamienDennehy/Imgur.API
+.. Build_: https://ci.appveyor.com/project/DamienDennehy/imgur-api
+.. NuGet_ https://www.nuget.org/packages/Imgur.API/
    
-   test1
-   test2
-
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-
