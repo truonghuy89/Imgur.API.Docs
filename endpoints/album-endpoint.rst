@@ -9,7 +9,7 @@ that is returned at creation must be used.
 
 ::
 
-        var client = new ImgurClient("CLIENT_ID", "CLIENT_SECRET");
+        var client = new ImgurClient("CLIENT_ID");
         var endpoint = new AlbumEndpoint(client);
         var added = await endpoint.AddAlbumImagesAsync("ALBUM_ID_OR_DELETE_HASH", 
                             new List<string> {"IMAGE_ID", "IMAGE_ID", "IMAGE_ID"});
@@ -21,7 +21,7 @@ Create a new album.
 
 ::
 
-        var client = new ImgurClient("CLIENT_ID", "CLIENT_SECRET");
+        var client = new ImgurClient("CLIENT_ID");
         var endpoint = new AlbumEndpoint(client);
         var album = await endpoint.CreateAlbumAsync();
 
@@ -34,7 +34,7 @@ returned at creation must be used.
 
 ::
 
-        var client = new ImgurClient("CLIENT_ID", "CLIENT_SECRET");
+        var client = new ImgurClient("CLIENT_ID");
         var endpoint = new AlbumEndpoint(client);
         var deleted = await endpoint.DeleteAlbumAsync("ALBUM_ID_OR_DELETE_HASH");
 
@@ -46,7 +46,7 @@ to favorite the album.
 
 ::
 
-        var client = new ImgurClient("CLIENT_ID", "CLIENT_SECRET", OAUTH2_TOKEN);
+        var client = new ImgurClient("CLIENT_ID", OAUTH2_TOKEN);
         var endpoint = new AlbumEndpoint(client);
         var favorited = await endpoint.FavoriteAlbumAsync("ALBUM_ID");
 
@@ -57,7 +57,7 @@ Get information about a specific album.
 
 ::
 
-        var client = new ImgurClient("CLIENT_ID", "CLIENT_SECRET");
+        var client = new ImgurClient("CLIENT_ID");
         var endpoint = new AlbumEndpoint(client);
         var album = await endpoint.GetAlbumAsync("ALBUM_ID");
 
@@ -68,7 +68,7 @@ Get information about an image in an album.
 
 ::
 
-        var client = new ImgurClient("CLIENT_ID", "CLIENT_SECRET");
+        var client = new ImgurClient("CLIENT_ID");
         var endpoint = new AlbumEndpoint(client);
         var image = await endpoint.GetAlbumImageAsync("IMAGE_ID", "ALBUM_ID");
 
@@ -79,7 +79,7 @@ Return all of the images in the album.
 
 ::
 
-        var client = new ImgurClient("CLIENT_ID", "CLIENT_SECRET");
+        var client = new ImgurClient("CLIENT_ID");
         var endpoint = new AlbumEndpoint(client);
         var images = await endpoint.GetAlbumImagesAsync("ALBUM_ID");
 
@@ -91,7 +91,7 @@ deletehash that is returned at creation must be used.
 
 ::
 
-        var client = new ImgurClient("CLIENT_ID", "CLIENT_SECRET");
+        var client = new ImgurClient("CLIENT_ID");
         var endpoint = new AlbumEndpoint(client);
         var added = await endpoint.RemoveAlbumImagesAsync("ALBUM_ID_OR_DELETE_HASH", 
                             new List<string> {"IMAGE_ID", "IMAGE_ID", "IMAGE_ID"});
@@ -105,7 +105,7 @@ returned at creation must be used.
 
 ::
 
-        var client = new ImgurClient("CLIENT_ID", "CLIENT_SECRET");
+        var client = new ImgurClient("CLIENT_ID");
         var endpoint = new AlbumEndpoint(client);
         var set = await endpoint.SetAlbumImagesAsync("ALBUM_ID_OR_DELETE_HASH", 
                             new List<string> {"IMAGE_ID", "IMAGE_ID", "IMAGE_ID"});
@@ -118,6 +118,6 @@ that is returned at creation must be used.
 
 ::
 
-        var client = new ImgurClient("CLIENT_ID", "CLIENT_SECRET");
+        var client = new ImgurClient("CLIENT_ID");
         var endpoint = new AlbumEndpoint(client);
         var updated = await endpoint.UpdateAlbumAsync("ALBUM_ID_OR_DELETE_HASH");

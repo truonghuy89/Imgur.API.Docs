@@ -17,6 +17,7 @@ GitHub_ | NuGet_
    quick-start
    authentication
    oauth2
+   endpoints
    status
    release-notes
    faq

@@ -8,7 +8,7 @@ Delete an Album with a given id. OAuth authentication required.
 
 ::
 
-        var client = new ImgurClient("CLIENT_ID", "CLIENT_SECRET", OAUTH2_TOKEN);
+        var client = new ImgurClient("CLIENT_ID", OAUTH2_TOKEN);
         var endpoint = new AccountEndpoint(client);
         var deleted = await endpoint.DeleteAlbumAsync("ALBUM_ID", "USERNAME");
 
@@ -19,7 +19,7 @@ Delete a comment. OAuth authentication required.
 
 ::
 
-        var client = new ImgurClient("CLIENT_ID", "CLIENT_SECRET", OAUTH2_TOKEN);
+        var client = new ImgurClient("CLIENT_ID", OAUTH2_TOKEN);
         var endpoint = new AccountEndpoint(client);
         var deleted = await endpoint.DeleteCommentAsync(COMMENT_ID, "USERNAME");
 
@@ -30,7 +30,7 @@ Deletes an Image. OAuth authentication required.
 
 ::
 
-        var client = new ImgurClient("CLIENT_ID", "CLIENT_SECRET", OAUTH2_TOKEN);
+        var client = new ImgurClient("CLIENT_ID", OAUTH2_TOKEN);
         var endpoint = new AccountEndpoint(client);
         var deleted = await endpoint.DeleteImageAsync("DELETE_HASH", "USERNAME");
 
@@ -41,7 +41,7 @@ Request standard user information.
 
 ::
 
-        var client = new ImgurClient("CLIENT_ID", "CLIENT_SECRET");
+        var client = new ImgurClient("CLIENT_ID");
         var endpoint = new AccountEndpoint(client);
         var account = await endpoint.GetAccountAsync("USERNAME");
 
@@ -52,7 +52,7 @@ Returns the users favorited images. OAuth authentication required.
 
 ::
 
-        var client = new ImgurClient("CLIENT_ID", "CLIENT_SECRET", OAUTH2_TOKEN);
+        var client = new ImgurClient("CLIENT_ID", OAUTH2_TOKEN);
         var endpoint = new AccountEndpoint(client);
         var favourites = await endpoint.GetAccountFavoritesAsync();
 
@@ -63,7 +63,7 @@ Return the images the user has favorited in the gallery.
 
 ::
 
-        var client = new ImgurClient("CLIENT_ID", "CLIENT_SECRET");
+        var client = new ImgurClient("CLIENT_ID");
         var endpoint = new AccountEndpoint(client);
         var favourites = await endpoint.GetAccountGalleryFavoritesAsync("USERNAME");
 
@@ -74,7 +74,7 @@ Returns the account settings. OAuth authentication required.
 
 ::
 
-        var client = new ImgurClient("CLIENT_ID", "CLIENT_SECRET", OAUTH2_TOKEN);
+        var client = new ImgurClient("CLIENT_ID", OAUTH2_TOKEN);
         var endpoint = new AccountEndpoint(client);
         var submissions = await endpoint.GetAccountSettingsAsync();
 
@@ -85,7 +85,7 @@ Return the images a user has submitted to the gallery.
 
 ::
 
-        var client = new ImgurClient("CLIENT_ID", "CLIENT_SECRET");
+        var client = new ImgurClient("CLIENT_ID");
         var endpoint = new AccountEndpoint(client);
         var submissions = await endpoint.GetAccountSubmissionsAsync("USERNAME");
                         
@@ -98,7 +98,7 @@ Album Endpoint.
 
 ::
 
-        var client = new ImgurClient("CLIENT_ID", "CLIENT_SECRET");
+        var client = new ImgurClient("CLIENT_ID");
         var endpoint = new AccountEndpoint(client);
         var album = await endpoint.GetAlbumAsync("ALBUM_ID", "USERNAME");
 
@@ -109,7 +109,7 @@ Return the total number of albums associated with the account.
 
 ::
 
-        var client = new ImgurClient("CLIENT_ID", "CLIENT_SECRET");
+        var client = new ImgurClient("CLIENT_ID");
         var endpoint = new AccountEndpoint(client);
         var count = await endpoint.GetAlbumCountAsync("USERNAME");  
                                 
@@ -121,7 +121,7 @@ Return an array of all of the album IDs.
 
 ::
 
-        var client = new ImgurClient("CLIENT_ID", "CLIENT_SECRET");
+        var client = new ImgurClient("CLIENT_ID");
         var endpoint = new AccountEndpoint(client);
         var albumIds = await endpoint.GetAlbumIdsAsync("USERNAME", PAGE);
 
@@ -133,7 +133,7 @@ user to see secret and hidden albums.
 
 ::
 
-        var client = new ImgurClient("CLIENT_ID", "CLIENT_SECRET");
+        var client = new ImgurClient("CLIENT_ID");
         var endpoint = new AccountEndpoint(client);
         var albums = await endpoint.GetAlbumsAsync("USERNAME", PAGE);
 
@@ -144,7 +144,7 @@ Return information about a specific comment.
 
 ::
 
-        var client = new ImgurClient("CLIENT_ID", "CLIENT_SECRET");
+        var client = new ImgurClient("CLIENT_ID");
         var endpoint = new AccountEndpoint(client);
         var comment = await endpoint.GetCommentAsync(COMMENT_ID, "USERNAME");
 
@@ -155,7 +155,7 @@ Return a count of all of the comments associated with the account.
 
 ::
 
-        var client = new ImgurClient("CLIENT_ID", "CLIENT_SECRET");
+        var client = new ImgurClient("CLIENT_ID");
         var endpoint = new AccountEndpoint(client);
         var count = await endpoint.GetCommentCountAsync("USERNAME");
 
@@ -166,7 +166,7 @@ Return an array of all of the comment IDs.
 
 ::
 
-        var client = new ImgurClient("CLIENT_ID", "CLIENT_SECRET");
+        var client = new ImgurClient("CLIENT_ID");
         var endpoint = new AccountEndpoint(client);
         var commentIds = await endpoint.GetCommentIdsAsync("USERNAME");
 
@@ -177,7 +177,7 @@ Return the comments the user has created.
 
 ::
 
-        var client = new ImgurClient("CLIENT_ID", "CLIENT_SECRET");
+        var client = new ImgurClient("CLIENT_ID");
         var endpoint = new AccountEndpoint(client);
         var comments = await endpoint.GetCommentsAsync("USERNAME");
 
@@ -188,7 +188,7 @@ Returns the totals for the gallery profile.
 
 ::
 
-        var client = new ImgurClient("CLIENT_ID", "CLIENT_SECRET");
+        var client = new ImgurClient("CLIENT_ID");
         var endpoint = new AccountEndpoint(client);
         var profile = await endpoint.GetGalleryProfileAsync("USERNAME");
 
@@ -199,7 +199,7 @@ Return information about a specific image.
 
 ::
 
-        var client = new ImgurClient("CLIENT_ID", "CLIENT_SECRET");
+        var client = new ImgurClient("CLIENT_ID");
         var endpoint = new AccountEndpoint(client);
         var image = await endpoint.GetImageAsync("IMAGE_ID", "USERNAME");
 
@@ -211,7 +211,7 @@ authentication required.
 
 ::
 
-        var client = new ImgurClient("CLIENT_ID", "CLIENT_SECRET", OAUTH2_TOKEN);
+        var client = new ImgurClient("CLIENT_ID", OAUTH2_TOKEN);
         var endpoint = new AccountEndpoint(client);
         var count = await endpoint.GetImageCountAsync();
 		
@@ -223,7 +223,7 @@ OAuth authentication required.
 
 ::
 
-        var client = new ImgurClient("CLIENT_ID", "CLIENT_SECRET", OAUTH2_TOKEN);
+        var client = new ImgurClient("CLIENT_ID", OAUTH2_TOKEN);
         var endpoint = new AccountEndpoint(client);
         var imageIds = await endpoint.GetImageIdsAsync();
             
@@ -236,7 +236,7 @@ authentication required.
 
 ::
 
-        var client = new ImgurClient("CLIENT_ID", "CLIENT_SECRET", OAUTH2_TOKEN);
+        var client = new ImgurClient("CLIENT_ID", OAUTH2_TOKEN);
         var endpoint = new AccountEndpoint(client);
         var images = await endpoint.GetImagesAsync();
 
@@ -248,7 +248,7 @@ required.
 
 ::
 
-        var client = new ImgurClient("CLIENT_ID", "CLIENT_SECRET", OAUTH2_TOKEN);
+        var client = new ImgurClient("CLIENT_ID", OAUTH2_TOKEN);
         var endpoint = new AccountEndpoint(client);
         var notifications = await endpoint.GetNotificationsAsync(false);
 
@@ -260,7 +260,7 @@ to gallery. OAuth authentication required.
 
 ::
 
-        var client = new ImgurClient("CLIENT_ID", "CLIENT_SECRET", OAUTH2_TOKEN);
+        var client = new ImgurClient("CLIENT_ID", OAUTH2_TOKEN);
         var endpoint = new AccountEndpoint(client);
         var sent = await endpoint.SendVerificationEmailAsync();
 
@@ -272,7 +272,7 @@ required.
 
 ::
 
-        var client = new ImgurClient("CLIENT_ID", "CLIENT_SECRET", OAUTH2_TOKEN);
+        var client = new ImgurClient("CLIENT_ID", OAUTH2_TOKEN);
         var endpoint = new AccountEndpoint(client);
         var updated = await endpoint.UpdateAccountSettingsAsync();
 
@@ -284,6 +284,6 @@ authentication required.
 
 ::
 
-        var client = new ImgurClient("CLIENT_ID", "CLIENT_SECRET", OAUTH2_TOKEN);
+        var client = new ImgurClient("CLIENT_ID", OAUTH2_TOKEN);
         var endpoint = new AccountEndpoint(client);
         var verified = await endpoint.VerifyEmailAsync();
