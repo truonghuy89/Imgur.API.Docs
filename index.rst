@@ -10,13 +10,13 @@ GitHub_ | NuGet_
 .. _GitHub: https://github.com/DamienDennehy/Imgur.API
 .. _NuGet: https://www.nuget.org/packages/Imgur.API
 
-Contents:
-
 .. toctree::
    :maxdepth: 2
+   :caption: Contents
    
    quick-start
    authentication
+   oauth2
    status
    release-notes
    faq
