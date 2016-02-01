@@ -4,7 +4,7 @@ Album Endpoint
 AddAlbumImagesAsync
 -------------------
 
-Adds an array of ids to the album. For anonymous albums, the deletehash
+Adds a list of ids to the album. For anonymous albums, the deletehash
 that is returned at creation must be used.
 
 ::
@@ -86,7 +86,7 @@ Return all of the images in the album.
 RemoveAlbumImagesAsync
 ----------------------
 
-Removes an array of ids from the album. For anonymous albums, the
+Removes a list of ids from the album. For anonymous albums, the
 deletehash that is returned at creation must be used.
 
 ::

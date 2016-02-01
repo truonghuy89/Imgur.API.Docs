@@ -6,3 +6,4 @@ Endpoints
    
    endpoints/account-endpoint
    endpoints/album-endpoint
+   endpoints/comment-endpoint

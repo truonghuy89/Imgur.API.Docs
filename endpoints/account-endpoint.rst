@@ -117,7 +117,7 @@ Return the total number of albums associated with the account.
 GetAlbumIdsAsync
 ----------------
 
-Return an array of all of the album IDs.
+Return a list of all of the album IDs.
 
 ::
 
@@ -162,7 +162,7 @@ Return a count of all of the comments associated with the account.
 GetCommentIdsAsync
 ------------------
 
-Return an array of all of the comment IDs.
+Return a list of all of the comment IDs.
 
 ::
 
@@ -218,7 +218,7 @@ authentication required.
 GetImageIdsAsync
 ----------------
 
-Returns an array of Image IDs that are associated with the account.
+Returns a list of Image IDs that are associated with the account.
 OAuth authentication required.
 
 ::

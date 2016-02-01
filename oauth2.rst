@@ -51,9 +51,9 @@ Note that you must use the Client Secret to get the refresh token.
 Using the OAuth2 token.
 -----------------------
 
-Using the OAuth2 token can be done in two ways.
+Using the OAuth2 token can be done in two ways:
 
-You may use it in the client’s constructor:
+1. You may use it in the client’s constructor:
 
 ::
 
@@ -62,8 +62,7 @@ You may use it in the client’s constructor:
 
         var client = new ImgurClient("CLIENT_ID", "CLIENT_SECRET", token);
 
-You may also switch or set the token explicitly using the client’s
-SetOAuth2Token method:
+2. You may also switch or set the token explicitly using the client’s SetOAuth2Token method:
 
 ::
 

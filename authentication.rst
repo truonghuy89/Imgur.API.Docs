@@ -10,7 +10,7 @@ Using the Imgur Api
 -------------------
 
 Once you have the application registered, you can use it by declaring an instance of the ImgurClient class.
-You can declare an instance using the Client ID and Client Secret, or (as of v3.7.0) just the Client ID.
+You can declare an instance using the Client ID + Client Secret, or (as of v3.7.0) just the Client ID.
 
 ::
 
@@ -26,6 +26,7 @@ If you will be using the Imgur api for commercial purposes (uploading more than 
 Register for Mashape at https://www.mashape.com/imgur/imgur-9
 
 Once you have the application registered, you can use it by declaring an instance of the MashapeClient class.
+You can declare an instance using the Client ID + Client Secret + Mashape Key, or (as of v3.7.0) just the Client ID + Mashape Key.
 
 ::
 
