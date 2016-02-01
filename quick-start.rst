@@ -1,11 +1,6 @@
 Quick Start
 ===========
 
-Issues
-------
-
-Report any issues at https://github.com/DamienDennehy/Imgur.API/issues
-
 Get Image
 ---------
 
