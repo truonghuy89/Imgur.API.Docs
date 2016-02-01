@@ -8,6 +8,7 @@ To access a user’s account, the user must first authorize your application so 
 The simplest way to do this is to redirect to Imgur’s authorization url.
 
 ::
+
         var client = new ImgurClient("CLIENT_ID");
         var endpoint = new OAuth2Endpoint(client);
         var redirectUrl = endpoint.GetAuthorizationUrl(OAuth2ResponseType.Token);
@@ -29,6 +30,7 @@ Creating an OAuth2 token from the Redirect URL.
 Using the Redirect URL values, an OAuth2 Token can be created.
 
 ::
+
         var token = new OAuth2Token("ACCESS_TOKEN", "REFRESH_TOKEN", "TOKEN_TYPE", 
                                     "ACCOUNT_ID", "ACCOUNT_USERNAME", EXPIRES_IN);
 
@@ -41,6 +43,7 @@ If the access token has expired but you still have the refresh token, you can re
 Note that you must use the Client Secret to get the refresh token.
 
 ::
+
         var client = new ImgurClient("CLIENT_ID", "CLIENT_SECRET");
         var endpoint = new OAuth2Endpoint(client);
         var token = endpoint.GetTokenByRefreshTokenAsync("REFRESH_TOKEN");
@@ -53,14 +56,17 @@ Using the OAuth2 token can be done in two ways.
 You may use it in the client’s constructor:
 
 ::
+
         var client = new ImgurClient("CLIENT_ID", token);
 ::
+
         var client = new ImgurClient("CLIENT_ID", "CLIENT_SECRET", token);
 
 You may also switch or set the token explicitly using the client’s
 SetOAuth2Token method:
 
 ::
+
         var client = new ImgurClient("CLIENT_ID");
         client.SetOAuth2Token(token);
 

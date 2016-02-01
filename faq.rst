@@ -12,6 +12,7 @@ If your application requires the use of a proxy, then this can be set in one of 
 Add the following section to your config file.
 
 ::
+
         <system.net>
           <defaultProxy useDefaultCredentials="true" />
         </system.net>
@@ -22,6 +23,7 @@ Add the following section to your config file.
 Set the DefaultWebProxy credentials before any API endpoints are used.
 
 ::
+
         System.Net.WebRequest.DefaultWebProxy.Credentials 
 			= System.Net.CredentialCache.DefaultNetworkCredentials;
 
