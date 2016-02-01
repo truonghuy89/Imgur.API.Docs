@@ -46,4 +46,4 @@ Marks notifications as viewed. OAuth authentication required.
         var client = new ImgurClient("CLIENT_ID", OAUTH2_TOKEN);
         var endpoint = new NotificationEndpoint(client);
         var marked = await endpoint.MarkNotificationsViewedAsync(
-							new List<string>{"NOTIFICATION_ID", "NOTIFICATION_ID"});
+						new List<string>{"NOTIFICATION_ID", "NOTIFICATION_ID"});
