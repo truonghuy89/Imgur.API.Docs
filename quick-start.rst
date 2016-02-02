@@ -10,7 +10,7 @@ Get Image
         {
             try
             {
-                var client = new ImgurClient("CLIENT_ID");
+                var client = new ImgurClient("CLIENT_ID", "CLIENT_SECRET");
                 var endpoint = new ImageEndpoint(client);
                 var image = await endpoint.GetImageAsync("IMAGE_ID");
                 Debug.Write("Image retrieved. Image Url: " + image.Link);
@@ -32,7 +32,7 @@ Upload Image
         {
             try
             {
-                var client = new ImgurClient("CLIENT_ID");
+                var client = new ImgurClient("CLIENT_ID", "CLIENT_SECRET");
                 var endpoint = new ImageEndpoint(client);
                 IImage image;
                 using (var fs = new FileStream(@"IMAGE_LOCATION", FileMode.Open))
