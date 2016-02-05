@@ -4,7 +4,7 @@ Custom Gallery Endpoint
 AddCustomGalleryTagsAsync
 -------------------------
 
-Add tags to a user’s custom gallery. OAuth authentication required.
+Add tags to a user's custom gallery. OAuth authentication required.
 
 ::
 
@@ -28,8 +28,7 @@ Add tags to filter out. OAuth authentication required.
 GetCustomGalleryAsync
 ---------------------
 
-View images for current user’s custom gallery. OAuth authentication
-required.
+View images for current user's custom gallery. OAuth authentication required.
 
 ::
 
@@ -41,8 +40,7 @@ required.
 GetCustomGalleryItemAsync
 -------------------------
 
-View a single item in a user’s custom gallery. OAuth authentication
-required.
+View a single item in a user's custom gallery. OAuth authentication required.
 
 ::
 
@@ -54,7 +52,7 @@ required.
 GetFilteredOutGalleryAsync
 --------------------------
 
-Retrieve user’s filtered out gallery. OAuth authentication required.
+Retrieve user's filtered out gallery. OAuth authentication required.
 
 ::
 

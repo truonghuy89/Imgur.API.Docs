@@ -242,7 +242,7 @@ Search the gallery with a given query string.
 
 ::
 
-        var client = new ImgurClient("CLIENT_ID", OAUTH2_TOKEN);
+        var client = new ImgurClient("CLIENT_ID");
         var endpoint = new GalleryEndpoint(client);
         var images = await endpoint.SearchGalleryAsync("QUERY");
 
@@ -253,7 +253,7 @@ Search the gallery with a given query string.
 
 ::
 
-        var client = new ImgurClient("CLIENT_ID", OAUTH2_TOKEN);
+        var client = new ImgurClient("CLIENT_ID");
         var endpoint = new GalleryEndpoint(client);
         var images = await endpoint.SearchGalleryAdvancedAsync("ALL_WORDS_QUERY", "ANY_WORDS_QUERY", 
                                                                 "EXACT_WORDS_QUERY", "NOT_WORDS_QUERY");

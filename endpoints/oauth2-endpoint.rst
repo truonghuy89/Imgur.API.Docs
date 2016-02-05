@@ -4,7 +4,7 @@ OAuth2 Endpoint
 GetAuthorizationUrl
 -------------------
 
-Creates an authorization url that can be used to authorize access to a user’s account.
+Creates an authorization url that can be used to authorize access to a user's account.
 
 ::
 
