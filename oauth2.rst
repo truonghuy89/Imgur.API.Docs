@@ -14,6 +14,7 @@ The simplest way to do this is to get and then redirect to Imgur's authorization
         var authorizationUrl = endpoint.GetAuthorizationUrl(OAuth2ResponseType.Token);
 		
 The authorization url will look similar to this: 
+
 https://api.imgur.com/oauth2/authorize/?client_id=CLIENT_ID&response_type=token
 
 Once you have the url, your application must redirect to it. How you redirect will depend on your application.
