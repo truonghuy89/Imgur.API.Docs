@@ -1,6 +1,14 @@
 Release Notes
 =============
 
+Version 3.7.0-beta3 (2016-03-11)
+--------------------------------
+
+- Added AccountUrl to AccountSettings model. 
+- Fixed bug with authorization url. 
+- Fixed bug with favoriting Images and Albums due to Mashape API changes. 
+- Fixed bug with Adding and Removing CustomGalleryTags due to API changes.
+
 Version 3.7.0-beta2 (2016-02-01)
 --------------------------------
 

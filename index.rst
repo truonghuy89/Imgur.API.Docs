@@ -18,7 +18,7 @@ GitHub_ | NuGet_
    authentication
    oauth2
    endpoints
-   status
+   Issues <https://watsonnet.readthedocs.org/en/latest/authentication/>
    release-notes
    faq
    
