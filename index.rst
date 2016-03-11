@@ -18,8 +18,8 @@ GitHub_ | NuGet_
    authentication
    oauth2
    endpoints
-   Issues <https://watsonnet.readthedocs.org/en/latest/authentication/>
    release-notes
+   Issues <https://github.com/DamienDennehy/Imgur.API/issues>
    faq
    
    
