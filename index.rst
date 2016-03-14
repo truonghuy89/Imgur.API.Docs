@@ -18,8 +18,8 @@ GitHub_ | NuGet_
    authentication
    oauth2
    endpoints
-   Release Notes <https://github.com/DamienDennehy/Imgur.API/releases>
-   Issues <https://github.com/DamienDennehy/Imgur.API/issues>
    faq
+   Release Notes (@GitHub) <https://github.com/DamienDennehy/Imgur.API/releases>
+   Issues (@GitHub)<https://github.com/DamienDennehy/Imgur.API/issues>
    
    
