@@ -23,6 +23,30 @@ Get Image
         }
         
 
+Get Image (synchronously - not recommended)
+---------
+
+::
+
+        public async Task GetImage()
+        {
+            try
+            {
+                var client = new ImgurClient("CLIENT_ID", "CLIENT_SECRET");
+                var endpoint = new ImageEndpoint(client);
+                var task = endpoint.GetImageAsync("IMAGE_ID");
+                Task.WaitAll(task);
+                var image = task.Result;
+                Debug.Write("Image retrieved. Image Url: " + image.Link);
+            }
+            catch (ImgurException imgurEx)
+            {
+                Debug.Write("An error occurred getting an image from Imgur.");
+                Debug.Write(imgurEx.Message);
+            }
+        }
+        
+
 Upload Image
 ------------
 
