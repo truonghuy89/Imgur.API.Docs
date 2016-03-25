@@ -28,7 +28,7 @@ Get Image (synchronously - not recommended)
 
 ::
 
-        public async Task GetImage()
+        public void GetImage()
         {
             try
             {
