@@ -35,4 +35,4 @@ You can declare an instance using the Client ID + Client Secret + Mashape Key, o
 
         var client = new MashapeClient("CLIENT_ID", "CLIENT_SECRET", "MASHAPE_KEY");
 
-More information on the Imgur api can be found at http://api.imgur.com/
+More information on the Imgur api can be found at https://apidocs.imgur.com/

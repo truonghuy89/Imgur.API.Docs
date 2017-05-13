@@ -128,4 +128,4 @@ Note that you must use the Client Secret to get the refresh token.
         var endpoint = new OAuth2Endpoint(client);
         var token = endpoint.GetTokenByRefreshTokenAsync("REFRESH_TOKEN");
 
-More information on Imgur's OAuth2 implementation can be found at https://api.imgur.com/oauth2
+More information on Imgur's OAuth2 implementation can be found at https://apidocs.imgur.com/#authorization-and-oauth
